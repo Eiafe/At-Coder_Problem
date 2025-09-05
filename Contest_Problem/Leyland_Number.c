@@ -3,8 +3,9 @@
 int main(){
     int A,B;
     scanf("%d %d",&A,&B);
-    int result=pow(2,8);
-    printf("%d",result);
+    int result=pow(A,B)+pow(B,A);
+    printf("%d\n",result);
 
 
 }
+
