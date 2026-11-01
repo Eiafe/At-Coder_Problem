@@ -1,18 +1,18 @@
 #include<bits/stdc++.h>
 using namespace std;
-int main(){
-    int point[101];
-    int n,m;
-    cin>>n>>m;
-    
-    for(int i=1;i<=n;i++){
-        cin>>point[i];
-    } 
-    int x;
-    int score=0;
-    for(int i=1;i<=m;i++){
-        cin>>x;
-        score+=point[x];
+int main (){
+    int n;
+    cin>>n;
+    int result=0;
+    int a;
+    for(int i=1;i<=n*7;i++){
+        cin>>a;
+        result+=a;
+        if(i%7==0){
+            cout<<result<<" ";
+            result=0;
+        }
+        
     }
-    cout<<score;
+   
 }
